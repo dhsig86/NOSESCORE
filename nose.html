@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Escore NOSE</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="nosestyle.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="my-4">Calculadora de Escore NOSE  </h1>
+        
+        <form id="noseForm">
+            <h4 class="my-4">Por favor, avalie a intensidade dos sintomas no último mês.</h4>
+            <h5 class="my-4">Responda todas as 5 questões e aperte em calcular. </h5>
+            <br>
+            <div class="form-group">
+                <label for="age">Idade</label>
+                <input type="number" class="form-control" id="age" placeholder="Insira sua idade em Anos">
+            </div>
+
+            <label for="question1">1. Congestão Nasal ou Sensação de nariz cheio?</label>
+            <input type="range" min="0" max="4" step="1" class="custom-range" id="question1">
+            <span id="label1"></span>
+            <br></br>
+            
+            <label for="question2">2. Bloqueio ou Obstrução Nasal?</label>
+            <input type="range" min="0" max="4" step="1" class="custom-range" id="question2">
+            <span id="label2"></span>
+            <br></br>
+            <label for="question3">3. Dificuldade para respirar pelo Nariz?</label>
+            <input type="range" min="0" max="4" step="1" class="custom-range" id="question3">
+            <span id="label3"></span>
+            <br></br>
+
+            <label for="question4">4. Dificuldade para dormir?</label>
+            <input type="range" min="0" max="4" step="1" class="custom-range" id="question4">
+            <span id="label4"></span>
+            <br></br>
+            <label for="question5">5. Incapaz de respirar o suficiente pelo Nariz durante o exercício ou esforço?</label>
+            <input type="range" min="0" max="4" step="1" class="custom-range" id="question5">
+            <span id="label5"></span>
+            <br></br>
+            <button type="button" id="calculate" class="btn btn-primary mt-4">Calcular Escore NOSE</button>
+        </form>
+        <div id="result" class="my-4"></div>
+                
+        <div id="comentario" class="my-4"></div>
+        <div id="tablecontainer" class="table"></div>
+        <div id="fonte" class="my-4"></div>
+            
+        
+
+    </div>
+    <!-- Adicionar o JavaScript do Bootstrap e o seu arquivo JavaScript personalizado -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="nose.js"></script>
+    <script src="legendassliders.js"></script>
+</body>
+<footer>
+    <div class="footer">
+        <p>Desenvolvido por: 
+            <a href="https://www.doctoralia.com.br/dario-hart-signorini/otorrino/rio-de-janeiro">Dr. Dario Hart Signorini</a></p>
+        <p>Apoio: OTOSIG </p>    
+    </div>
+</footer>
+</html>
